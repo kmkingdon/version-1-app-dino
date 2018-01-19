@@ -3,6 +3,7 @@ import './App.css';
 import { Header } from './Header.js';
 import { Section } from './Section.js';
 import { Form } from './Form.js';
+import { Footer } from './Footer.js';
 
 export class App extends React.Component {
   constructor(props) {
@@ -33,6 +34,7 @@ export class App extends React.Component {
           <Section key={this.state.data.id} listings={this.state.data}/>
           <Form updateData={this.updateData}/>
         </main>
+        <Footer />
       </div>
     );
   }
